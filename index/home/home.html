@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../src/index.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <!-- biblioteca de icones -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <title>Edição de Imagem</title>
     
 </head>
 <body>
+    <main>
+        <header>
+            <div>
+                <Button id="resetFiltros">limpar filtros</Button>
+            </div>
+            <div>
+                <Button id="newImg">nova Imagem</Button>
+                <Button id="salvarImg" style="background-color:#0081cf; color: white;">salvar</Button>
+            </div>
+        </header>
+        <div class="img-content">
+            <Input type="file" accept="image/*" style="display: none;">
+            <img src="img/default.png" alt="escolha uma imgame">
+        </div>
+    </main>
     
 </body>
 </html>
